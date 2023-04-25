@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/willi/Python/Spotify%20Project/mlruns/0/7d4c365b6b534b7b999049c6ac3708e6/artifacts
+deleted_time: 1682440321655
+end_time: 1682439605005
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 7d4c365b6b534b7b999049c6ac3708e6
+run_name: nebulous-midge-208
+run_uuid: 7d4c365b6b534b7b999049c6ac3708e6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682439604856
+status: 4
+tags: []
+user_id: willi

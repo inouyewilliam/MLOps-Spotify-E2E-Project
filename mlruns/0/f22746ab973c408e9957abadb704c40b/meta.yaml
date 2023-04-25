@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/willi/Python/Spotify%20Project/mlruns/0/f22746ab973c408e9957abadb704c40b/artifacts
+deleted_time: 1682440321655
+end_time: 1682439812855
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: f22746ab973c408e9957abadb704c40b
+run_name: polite-moose-835
+run_uuid: f22746ab973c408e9957abadb704c40b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682439812674
+status: 4
+tags: []
+user_id: willi
