@@ -1,4 +1,5 @@
 /Data/
-/.ipynb_checkpoints/
+.ipynb_checkpoints/*
 /mlruns
 .cache
+secret.txt
