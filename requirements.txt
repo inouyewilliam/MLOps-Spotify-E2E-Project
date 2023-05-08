@@ -1,0 +1,13 @@
+spotipy
+pandas
+scikit-learn
+numpy
+mlflow
+matplotlib
+seaborn
+lightgbm
+xgboost
+streamlit
+joblib
+optuna
+os
