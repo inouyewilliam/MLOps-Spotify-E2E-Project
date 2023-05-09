@@ -9,5 +9,5 @@ seaborn
 lightgbm
 xgboost
 streamlit
+evidently
 joblib
-os
