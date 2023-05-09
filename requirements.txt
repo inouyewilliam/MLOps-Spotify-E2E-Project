@@ -11,3 +11,4 @@ xgboost
 streamlit
 evidently
 joblib
+dvc
