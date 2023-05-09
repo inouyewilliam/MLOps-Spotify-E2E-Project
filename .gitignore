@@ -2,4 +2,3 @@
 mlruns/*
 .cache
 secret.txt
-/Data/*
