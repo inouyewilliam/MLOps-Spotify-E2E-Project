@@ -1,5 +1,6 @@
 spotipy
 pandas
+scipy
 scikit-learn
 numpy
 mlflow
@@ -9,5 +10,4 @@ lightgbm
 xgboost
 streamlit
 joblib
-optuna
 os

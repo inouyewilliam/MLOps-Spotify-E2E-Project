@@ -4,7 +4,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler, Normalizer, LabelEncoder
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv("C:/Users/willi/Python/Spotify_Project/Data/raw_data_test.csv", sep=",")
+df = pd.read_csv("C:/Users/willi/Python/Spotify_Project/Data/raw_data.csv", sep=",")
 
 
 # Change order of columns
