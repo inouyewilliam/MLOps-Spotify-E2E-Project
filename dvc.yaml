@@ -1,0 +1,16 @@
+stages:
+  extraction:
+    cmd: python scripts/data_extraction.py secret.txt
+    deps:
+    - scripts/data_extraction.py 
+    - secret.txt 
+    outs:
+    - Data/raw_data.csv
+
+    preparation:
+    cmd: python scripts/data_preparation.py Data/raw_data.csv
+    deps:
+    - scripts/data_preparation.py
+    - Data/raw_data.csv
+    outs:
+    - Data/preprocess_data.csv
