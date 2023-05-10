@@ -7,7 +7,7 @@ stages:
     outs:
     - Data/raw_data.csv
 
-    preparation:
+  preparation:
     cmd: python scripts/data_preparation.py Data/raw_data.csv
     deps:
     - scripts/data_preparation.py
