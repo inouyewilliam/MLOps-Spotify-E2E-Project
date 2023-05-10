@@ -1,0 +1,28 @@
+schema: '2.0'
+stages:
+  extraction:
+    cmd: python scripts/data_extraction.py secret.txt
+    deps:
+    - path: scripts/data_extraction.py
+      md5: 931835d668d990b03abbe6691586e193
+      size: 7408
+    - path: secret.txt
+      md5: 0ee34e32b5e929a349954bdd664bf1a4
+      size: 65
+    outs:
+    - path: Data/raw_data.csv
+      md5: 032d306822104036fa9813ff87613ea6
+      size: 355446
+  preparation:
+    cmd: python scripts/data_preparation.py Data/raw_data.csv
+    deps:
+    - path: Data/raw_data.csv
+      md5: 032d306822104036fa9813ff87613ea6
+      size: 355446
+    - path: scripts/data_preparation.py
+      md5: edd57826455099fa45fea3031f9d6840
+      size: 2021
+    outs:
+    - path: Data/preprocess_data.csv
+      md5: d384ebb8283b703dc289838a47c28eca
+      size: 120349
