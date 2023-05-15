@@ -2,3 +2,4 @@
 mlruns/*
 /.cache
 secret.txt
+temp.csv
