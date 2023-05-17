@@ -12,8 +12,9 @@ jobs:
       - uses: iterative/setup-dvc@v1
       - name: CICD
         run: |
-          pip install -r requirements.txt
-          dvc repro
+          pip install -r requirements.txt # install python packages
+          dvc pull -r origin # pull data from remote repo
+          dvc repro # run the CI/CD Pipeline
                 
       #- name: report
           # Create CML report
