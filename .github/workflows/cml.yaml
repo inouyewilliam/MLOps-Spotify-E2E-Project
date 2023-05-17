@@ -1,1 +1,22 @@
-
+name: CI-CD-Pipeline
+on: [push]
+jobs:
+  CICD-and-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - uses: iterative/setup-cml@v1
+      - uses: iterative/setup-dvc@v1
+      - name: CICD
+        run: |
+          pip install -r requirements.txt
+          dvc repro
+                
+      #- name: report
+          # Create CML report
+          #cat metrics.txt >> report.md
+          #echo '![](./plot.png "Confusion Matrix")' >> report.md
+          #cml comment create report.md
