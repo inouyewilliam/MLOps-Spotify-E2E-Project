@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler, Normalizer, LabelEncoder
@@ -34,6 +35,11 @@ df['speechiness'] =  df['speechiness'].astype('int8')
 df['instrumentalness'] = df['instrumentalness'].astype('int8')
 df['liveness'] = df['liveness'].astype('int8')
 
+# Transform nan to zeros and 
+df["genres"].replace(np.nan, 0, inplace=True)
+df["sub-genres"].replace(np.nan, 0, inplace=True)
+
+# Encode genres and sub-genres
 le = LabelEncoder()
 df['genres'] = le.fit_transform(df['genres'].astype(str))
 df['sub-genres'] = le.fit_transform(df['sub-genres'].astype(str))

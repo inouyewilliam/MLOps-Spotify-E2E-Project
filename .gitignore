@@ -1,5 +1,6 @@
-/.ipynb_checkpoints/*
-mlruns/*
-/.cache
+.ipynb_checkpoints/
+mlruns/
+.cache
 secret.txt
 temp.csv
+.env

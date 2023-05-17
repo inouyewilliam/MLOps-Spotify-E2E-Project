@@ -1,9 +1,8 @@
 stages:
   extraction:
-    cmd: python scripts/data_extraction.py secret.txt
+    cmd: python scripts/data_extraction.py
     deps:
     - scripts/data_extraction.py 
-    - secret.txt 
     outs:
     - Data/raw_data.csv
 
@@ -21,14 +20,8 @@ stages:
     - scripts/model_training.py
     - Data/preprocess_data.csv
 
-  deployment:
-    cmd: python scripts/model_deployment.py Data/new_data.csv
-    deps:
-    - python scripts/model_deployment.py
-    - Data/new_data.csv
-
-  application:
-    cmd: python scripts/application.py Data/new_data.csv
-    deps:
-    - python scripts/application.py
-    - Data/new_data.csv  
+  #application:
+    #cmd: python scripts/application.py Data/new_data.csv
+    #deps:
+    #- python scripts/application.py
+    #- Data/new_data.csv  

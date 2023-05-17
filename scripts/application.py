@@ -50,11 +50,11 @@ if page == "Predictor":
         if predictions and not data.empty:
                 moods = mood_prediction(temp_filename)
                 st.write("Mood Predictions:")
-                for mood in moods:         
+                for index, mood in enumerate(moods):        
                     if mood == 1:
-                        st.write("😊happy")
+                        st.write(f"{index} 😊happy")
                     else:
-                        st.write("😒sad")
+                        st.write(f"{index} 😒sad")
                         
             
 # ----------- Music Details Page

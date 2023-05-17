@@ -12,3 +12,4 @@ streamlit
 evidently
 joblib
 dvc
+dotenv

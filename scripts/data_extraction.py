@@ -1,13 +1,17 @@
 #Import libraries
+import os
+from dotenv import find_dotenv, load_dotenv
 import pandas as pd
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 #Autentification
-with open("C:/Users/willi/Python/Spotify_Project/secret.txt") as f:
-    secret_ls = f.readlines()
-    CLIENT_ID = secret_ls[0][:-1]
-    CLIENT_SECRET = secret_ls[1]
+dotenv_path = find_dotenv()
+load_dotenv(dotenv_path)
+#with open("C:/Users/willi/Python/Spotify_Project/secret.txt") as f:
+    #secret_ls = f.readlines()
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
     
 client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
 sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
