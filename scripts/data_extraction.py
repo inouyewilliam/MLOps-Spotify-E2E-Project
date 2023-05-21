@@ -8,8 +8,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 #Autentification
 dotenv_path = find_dotenv()
 load_dotenv(dotenv_path)
-#with open("C:/Users/willi/Python/Spotify_Project/secret.txt") as f:
-    #secret_ls = f.readlines()
+
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
     

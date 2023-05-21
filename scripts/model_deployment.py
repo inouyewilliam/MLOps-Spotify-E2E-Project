@@ -35,16 +35,19 @@ load_dotenv(dotenv_path)
 # Create prediction function
 def mood_prediction(music):
         
-        MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI")
-        MLFLOW_TRACKING_USERNAME = os.getenv("MLFLOW_TRACKING_USERNAME")
-        MLFLOW_TRACKING_PASSWORD = os.getenv("MLFLOW_TRACKING_PASSWORD")
+    MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI")
+    MLFLOW_TRACKING_USERNAME = os.getenv("MLFLOW_TRACKING_USERNAME")
+    MLFLOW_TRACKING_PASSWORD = os.getenv("MLFLOW_TRACKING_PASSWORD")
     
-        mlflow.set_tracking_uri("https://dagshub.com/inouyewilliam/Master-Thesis.mlflow")
+    mlflow.set_tracking_uri("https://dagshub.com/inouyewilliam/Master-Thesis.mlflow")
     
-        logged_model = 'runs:/5cf7eb61d49d4df4b38bbfa2ed92cd4c/model'
+    logged_model = 'runs:/5cf7eb61d49d4df4b38bbfa2ed92cd4c/model'
     
-        loaded_model = mlflow.pyfunc.load_model(logged_model)
+    loaded_model = mlflow.pyfunc.load_model(logged_model)
     
+    if isinstance(music, pd.DataFrame):
+        predictions = loaded_model.predict(music)
+    else:
         predictions = loaded_model.predict(pd.read_csv(music))
         
-        return list(predictions)
+    return list(predictions)
