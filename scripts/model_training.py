@@ -35,6 +35,25 @@ MLFLOW_TRACKING_PASSWORD = os.getenv("MLFLOW_TRACKING_PASSWORD")
 
 mlflow.set_tracking_uri("https://dagshub.com/inouyewilliam/Master-Thesis.mlflow")
 
+#Data Types dictionary
+dtype = {
+       'popularity':'int8',
+       'genres': str,
+       'sub-genres': str,
+       'explicit':'int8', 
+       'followers': int, 
+       'danceability':float,
+       'energy': float, 
+       'key':'int8',
+       'loudness': float,
+       'mode':'int8', 
+       'instrumentalness':'int8',
+       'liveness':'int8',
+       'tempo':float, 
+       'duration_ms':int,
+       'time_signature':'int8',
+       'mood': 'int8' 
+       }
 
 #------------------- Train LightGBM model  
 if __name__ == "__main__":
@@ -42,12 +61,12 @@ if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(42)
     
-    # Read the preprocess csv file
+    # Read the final csv file
     csv = (
-            "C:/Users/willi/Python/Spotify_Project/Data/preprocess_data.csv"
+            "C:/Users/willi/Python/Spotify_Project/Data/final_data.csv"
         )
     try:
-            data = pd.read_csv(csv, sep=",")
+            data = pd.read_csv(csv, sep=",", dtype = dtype)
             
     except Exception as e:
             logger.exception(
@@ -149,12 +168,12 @@ if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(42)
     
-    # Read the preprocess csv file
+    # Read the final csv file
     csv = (
-            "C:/Users/willi/Python/Spotify_Project/Data/preprocess_data.csv"
+            "C:/Users/willi/Python/Spotify_Project/Data/final_data.csv"
         )
     try:
-            data = pd.read_csv(csv, sep=",")
+            data = pd.read_csv(csv, sep=",", dtype = dtype)
             
     except Exception as e:
             logger.exception(
@@ -252,12 +271,12 @@ if __name__ == "__main__":
     
     warnings.filterwarnings("ignore")
     np.random.seed(42)
-    # Read the preprocess csv file
+    # Read the final csv file
     csv = (
-            "C:/Users/willi/Python/Spotify_Project/Data/preprocess_data.csv"
+            "C:/Users/willi/Python/Spotify_Project/Data/final_data.csv"
         )
     try:
-            data = pd.read_csv(csv, sep=",")
+            data = pd.read_csv(csv, sep=",", dtype = dtype)
             
     except Exception as e:
             logger.exception(
@@ -358,12 +377,12 @@ if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(42)
     
-    # Read the preprocess csv file
+    # Read the final csv file
     csv = (
-            "C:/Users/willi/Python/Spotify_Project/Data/preprocess_data.csv"
+            "C:/Users/willi/Python/Spotify_Project/Data/final_data.csv"
         )
     try:
-            data = pd.read_csv(csv, sep=",")
+            data = pd.read_csv(csv, sep=",", dtype = dtype)
             
     except Exception as e:
             logger.exception(
@@ -462,12 +481,12 @@ if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(42)
     
-    # Read the preprocess csv file
+    # Read the final csv file
     csv = (
-            "C:/Users/willi/Python/Spotify_Project/Data/preprocess_data.csv"
+            "C:/Users/willi/Python/Spotify_Project/Data/final_data.csv"
         )
     try:
-            data = pd.read_csv(csv, sep=",")
+            data = pd.read_csv(csv, sep=",", dtype = dtype)
             
     except Exception as e:
             logger.exception(

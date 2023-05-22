@@ -89,6 +89,10 @@ playlist_2021 = playlist_link.split("/")[-1].split("?")[0]
 playlist_link = "https://open.spotify.com/playlist/56r5qRUv3jSxADdmBkhcz7?si=12f218d444ba44fe"
 playlist_2022 = playlist_link.split("/")[-1].split("?")[0] 
 
+#Top 100 Global 
+playlist_link = "https://open.spotify.com/playlist/3IsxzDS04BvejFJcQ0iVyW?si=cdc42a2ab3474a6b"
+playlist_global = playlist_link.split("/")[-1].split("?")[0]
+
 # Make DataFrame of a playlist
 def analyze_playlist(creator, playlist_id):
 
@@ -152,13 +156,14 @@ playlist_dict = {
     "playlist_2022" : ("sp", playlist_2022)
 }
 
+
 def analyze_playlist_dict(playlist_dict):
     
     # Loop through every playlist in the dict and analyze it
     for i, (key, val) in enumerate(playlist_dict.items()):
         playlist_df = analyze_playlist(*val)
         # Add a playlist column so that we can see which playlist a track belongs too
-        playlist_df["playlist"] = key
+        #playlist_df["playlist"] = key
         # Create or concat df
         if i == 0:
             playlist_dict_df = playlist_df
@@ -169,16 +174,25 @@ def analyze_playlist_dict(playlist_dict):
 
 Raw_data_df = analyze_playlist_dict(playlist_dict)
 
-# Clean genres column
-df  = pd.DataFrame(Raw_data_df.genres.apply(lambda x: pd.Series(str(x).split("["))))
-df2 = df.replace(regex=["]"],value='')
-df3 = df2.replace(regex=["'"],value='')
-df4 = pd.DataFrame(df3.loc[:,1].apply(lambda x: pd.Series(str(x).split(","))))
+New_data_df = analyze_playlist("sp", playlist_global)
 
-# Add Genres columns
-Raw_data_df["genres"] = df4.loc[:,0]
-Raw_data_df["sub-genres"] = df4.loc[:,1]
+def clean_genres(df):
+    # Clean genres column
+    df1  = pd.DataFrame(df.genres.apply(lambda x: pd.Series(str(x).split("["))))
+    df2 = df1.replace(regex=["]"],value='')
+    df3 = df2.replace(regex=["'"],value='')
+    df4 = pd.DataFrame(df3.loc[:,1].apply(lambda x: pd.Series(str(x).split(","))))
+
+    # Add Genres columns
+    df["genres"] = df4.loc[:,0]
+    df["sub-genres"] = df4.loc[:,1]
+    return df
+
+# Export to csv
+Raw_data_df = clean_genres(Raw_data_df)
+Raw_data_df.to_csv("C:/Users/willi/Python/Spotify_Project/Data/raw_data.csv", index = False)
 
 
 # Export to csv
-Raw_data_df.to_csv("C:/Users/willi/Python/Spotify_Project/Data/raw_data.csv", index = False)
+New_data_df = clean_genres(New_data_df)
+New_data_df.to_csv("C:/Users/willi/Python/Spotify_Project/Data/new_data.csv", index = False)

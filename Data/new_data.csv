@@ -1,0 +1,101 @@
+artist,album,track_name,release_date,popularity,genres,explicit,followers,track_id,danceability,energy,key,loudness,mode,speechiness,instrumentalness,liveness,valence,tempo,duration_ms,time_signature,sub-genres
+Lil Durk,All My Life (feat. J. Cole),All My Life (feat. J. Cole),2023-05-12,87,chicago drill,True,5560201,6HgWWaMu31KdOpEG5l28BG,0.829,0.436,3,-8.205,1,0.327,0,0.0954,0.693,143.031,223204,4, chicago rap
+Morgan Wallen,3 Songs At A Time Sampler,Last Night,2023-01-31,90,contemporary country,True,5904499,59uQI0PADDKeE6UZDTJEe8,0.517,0.675,6,-5.382,1,0.0357,0,0.151,0.518,203.853,163855,4,
+YOASOBI,アイドル,アイドル,2023-04-12,90,j-pop,False,5482747,7ovUcF5uHTBRzUpB6ZOmvt,0.574,0.935,1,-2.783,1,0.0926,1.07e-06,0.367,0.836,166.008,213234,4, japanese teen pop
+Eslabon Armado,Ella Baila Sola,Ella Baila Sola,2023-03-16,99,corrido,False,4018287,3dnP0JxCgygwQH9Gm7q7nb,0.668,0.758,5,-5.176,0,0.0332,1.89e-05,0.0837,0.834,147.989,165671,3, corridos tumbados
+Drake,Search & Rescue,Search & Rescue,2023-04-07,91,canadian hip hop,True,75347210,7aRCf5cLOFN1U7kvtChY1G,0.817,0.44,10,-8.482,0,0.0734,1.42e-06,0.33,0.544,142.024,272113,4, canadian pop
+Grupo Frontera,un x100to,un x100to,2023-04-17,100,musica chihuahuense,False,908428,6pD0ufEQq0xdHSsRbg9LBK,0.569,0.724,6,-4.076,0,0.0474,0,0.27,0.562,83.118,194563,4, nueva musica mexicana
+Miley Cyrus,Flowers,Flowers,2023-01-13,97,pop,False,20777609,0yLdNVWF3Srea0uzk55zFn,0.707,0.681,0,-4.325,1,0.0668,5.15e-06,0.0322,0.646,117.999,200455,4,
+Toosii,Favorite Song,Favorite Song,2023-02-17,86,north carolina hip hop,False,1077307,1SRw5p2lVAi7RGlHEmZg66,0.816,0.367,2,-9.354,1,0.0588,0,0.0987,0.413,116.035,208630,4,
+SZA,SOS,Kill Bill,2022-12-09,92,pop,False,12599639,3OHfY25tqY28d16oZczHc8,0.644,0.728,8,-5.75,1,0.0351,0.169,0.161,0.43,88.993,153947,4, r&b
+Yng Lvcas,La Bebe (Remix),La Bebe - Remix,2023-03-17,99,,True,78180,2UW7JaomAMuX9pZrjVpHAU,0.812,0.479,2,-5.678,0,0.333,1.21e-06,0.0756,0.559,169.922,234353,4,
+Ikemdi,Pull Up / For Life,Pull Up,2022-08-19,29,,False,671,6HuJapjL14fuN7ex49wxca,0.739,0.474,0,-8.473,1,0.116,8.82e-06,0.0726,0.589,110.063,182670,4,
+SZA,SOS,Snooze,2022-12-09,92,pop,True,12599639,4iZ4pt7kvcaH6Yo8UoZ4s2,0.559,0.551,5,-7.231,1,0.132,0,0.11,0.392,143.008,201800,4, r&b
+Luke Combs,Gettin' Old,Fast Car,2023-03-24,89,contemporary country,False,8523638,1Lo0QY9cvc8sUB2vnIOxDT,0.712,0.603,8,-5.52,1,0.0262,0,0.115,0.67,97.994,265493,4, country
+Morgan Wallen,One Thing At A Time,Thinkin’ Bout Me,2023-03-03,87,contemporary country,False,5904499,0PAcdVzhPO4gq1Iym9ESnK,0.656,0.757,3,-5.775,0,0.0308,0,0.117,0.429,139.971,177388,4,
+Rema,Calm Down (with Selena Gomez),Calm Down (with Selena Gomez),2022-08-25,95,afrobeats,False,2386026,0WtM2NBVQNNJLh6scP13H8,0.801,0.806,11,-5.206,1,0.0381,0.000669,0.114,0.802,106.999,239318,4, nigerian pop
+LE SSERAFIM,UNFORGIVEN,UNFORGIVEN (feat. Nile Rodgers),2023-05-01,87,k-pop girl group,False,2158523,51vRumtqbkNW9wrKfESwfu,0.795,0.875,4,-4.079,0,0.0525,8.94e-05,0.107,0.375,104.008,182149,4,
+PinkPantheress,Boy's a liar Pt. 2,Boy's a Liar Pt. 2,2023-02-03,96,,False,2063294,6AQbmUe0Qwf5PZnt4HmTXv,0.696,0.809,5,-8.254,1,0.05,0.000128,0.248,0.857,132.962,131013,4,
+Lil Baby,Too Hard,Freestyle,2017-12-01,85,atl hip hop,True,14144806,5BbdKBZO0TH0GhfxUfyhL9,0.877,0.517,2,-5.426,0,0.0706,0,0.143,0.255,119.996,162053,4, atl trap
+Taylor Swift,Midnights,Anti-Hero,2022-10-21,94,pop,False,74695770,0V3wPSX9ygBnCm8psDIegu,0.637,0.643,4,-6.571,1,0.0519,1.8e-06,0.142,0.533,97.008,200690,4,
+David Kushner,Daylight,Daylight,2023-04-14,97,gen z singer-songwriter,False,886470,1odExI7RdWc4BT515LTAwj,0.508,0.43,2,-9.475,0,0.0335,0.000441,0.093,0.324,130.09,212954,4,
+Hypa Cee,Dia Papa,Dia Papa,2023-05-05,45,,True,212,54GywLysfo7EYyAsLPO2gt,0.854,0.526,2,-6.829,1,0.183,0,0.124,0.661,77.314,184138,3,
+Morgan Wallen,You Proof,You Proof,2022-05-13,80,contemporary country,False,5904499,5uU1uuyaUIBOiiUSQG7Wl3,0.731,0.85,9,-4.913,1,0.0336,0,0.605,0.644,119.706,157478,4,
+Onyinye,Expensive,Expensive,2023-04-14,36,,False,181,5NFR7Yapc7YUuj6ile7beJ,0.848,0.701,11,-9.863,0,0.0409,0.00303,0.0512,0.758,112.977,173035,4,
+Peso Pluma,PRC,PRC,2023-01-23,96,corrido,True,3424861,2mpoNBkngUEwnaKoBhZ0vl,0.784,0.826,7,-6.34,0,0.0538,7.09e-05,0.123,0.893,138.078,184066,3, nueva musica mexicana
+SPITZ,美しい鰭,美しい鰭,2023-04-10,78,classic j-pop,False,1859154,3RauRsiIxUOQTS8h9sVWcP,0.551,0.909,1,-3.711,1,0.0295,0.000313,0.204,0.76,98.048,209778,4, j-pop
+Lil Baby,My Turn (Deluxe),Low Down,2020-05-01,84,atl hip hop,True,14144806,5m0yZ33oOy0yYBtdTXuxQe,0.962,0.619,10,-5.562,0,0.405,0,0.083,0.154,127.958,144652,4, atl trap
+FIFTY FIFTY,The Beginning: Cupid,Cupid - Twin Ver.,2023-02-24,98,k-pop girl group,False,702249,7FbrGaHYVDmfr7KoLIZnQ7,0.783,0.592,11,-8.332,0,0.0331,4.15e-06,0.347,0.726,120.018,174253,4,
+Junior H,El Azul,El Azul,2023-02-10,95,corrido,False,7609247,1haJsMtoBhHfvuM7XWuT3W,0.558,0.648,9,-7.081,0,0.055,7.76e-06,0.0986,0.844,143.876,187226,3, corridos tumbados
+Chris Brown,Indigo (Extended),Under The Influence,2019-10-04,91,r&b,True,19533399,5IgjP7X4th6nMNDh4akUHb,0.733,0.69,9,-5.529,0,0.0427,1.18e-06,0.105,0.31,116.992,184613,4, rap
+Kali,Area Codes,Area Codes,2023-03-17,85,viral rap,True,108272,7sliFe6W30tPBPh6dvZsIH,0.823,0.388,1,-10.867,1,0.491,0,0.0876,0.507,154.569,139326,4,
+Metro Boomin,HEROES & VILLAINS,Creepin' (with The Weeknd & 21 Savage),2022-12-02,96,rap,True,4312756,2dHHgzDwk4BJdRwy9uXhTO,0.715,0.62,1,-6.005,0,0.0484,0,0.0822,0.172,97.95,221520,4, trap
+Ed Sheeran,Eyes Closed,Eyes Closed,2023-03-24,89,pop,False,112123235,07bsRv0pcpbG4zJeLsUs1p,0.777,0.526,2,-6.221,1,0.0645,0,0.105,0.389,107.071,194849,4, uk pop
+Miguel,All I Want Is You,Sure Thing,2010-11-26,91,r&b,False,4638044,0JXXNGljqupsJaZsgSbMZV,0.684,0.607,11,-8.127,0,0.1,0.000307,0.191,0.498,81.001,195373,4,
+Future,I NEVER LIKED YOU,WAIT FOR U (feat. Drake & Tems),2022-04-29,87,atl hip hop,True,13896500,59nOXPmaKlBfGMDeOVGrIK,0.463,0.642,1,-4.474,1,0.34,0,0.0686,0.339,83.389,189893,4, hip hop
+Peso Pluma,Por las Noches,Por las Noches,2021-06-11,93,corrido,False,3424861,2VzCjpKvPB1l1tqLndtAQa,0.807,0.595,0,-7.19,1,0.0325,2.44e-05,0.0735,0.392,92.491,239845,4, nueva musica mexicana
+Harry Styles,Harry's House,As It Was,2022-05-20,92,pop,False,27550888,4Dvkj6JhhA12EX05fT7y2e,0.52,0.731,6,-5.338,0,0.0557,0.00101,0.311,0.662,173.93,167303,4,
+SEVENTEEN,SEVENTEEN 10th Mini Album 'FML',Super,2023-04-24,88,k-pop,False,9206821,3AOf6YEpxQ894FmrwI9k96,0.771,0.88,8,-4.091,1,0.0857,1.41e-06,0.167,0.347,137.018,200387,4, k-pop boy group
+IVE,I've IVE,I AM,2023-04-10,89,k-pop,False,2158214,70t7Q6AYG6ZgTYmJWcnkUM,0.683,0.875,4,-4.866,0,0.0549,0,0.084,0.384,122.002,183853,4, k-pop girl group
+Natanael Cano,AMG,AMG,2022-11-24,95,corrido,True,6795567,1lRtH4FszTrwwlK5gTSbXO,0.772,0.73,11,-6.657,0,0.0972,0.000107,0.274,0.786,136.175,174943,3, corridos tumbados
+Vaundy,strobo,怪獣の花唄,2020-05-27,80,j-pop,False,1589834,10zz9RZt9DnqcxNWksRNrx,0.425,0.939,2,-3.498,1,0.054,0,0.331,0.638,150.015,224806,4, japanese soul
+OFFICIAL HIGE DANDISM,Subtitle,Subtitle,2022-10-12,61,anime,False,5617886,4zrKPIygugUDKGFEjVwpSB,0.649,0.683,6,-6.49,1,0.0424,0,0.118,0.381,130.0,305509,4, anime rock
+Drake,Her Loss,Rich Flex,2022-11-04,90,canadian hip hop,True,75347210,1bDbXMyjaUIooNwFE9wn0N,0.561,0.52,11,-9.342,0,0.244,1.86e-06,0.355,0.424,153.15,239360,3, canadian pop
+Taylor Swift,Lover,Cruel Summer,2019-08-23,92,pop,False,74695770,1BxfuPKGuaTgP7aM0Bbdwr,0.552,0.702,9,-5.707,1,0.157,2.06e-05,0.105,0.564,169.994,178427,4,
+Ice Spice,Princess Diana (with Nicki Minaj),Princess Diana (with Nicki Minaj),2023-04-14,87,bronx drill,True,1256789,0ZxhtATQ0a6EvQNZ0z6NKV,0.898,0.676,9,-5.196,1,0.187,0,0.101,0.742,147.991,172125,4,
+NLE Choppa,SLUT ME OUT,SLUT ME OUT,2022-04-22,87,memphis hip hop,True,6180019,5BmB3OaQyYXCqRyN8iR2Yi,0.938,0.606,6,-6.396,0,0.419,0,0.528,0.706,121.108,123673,4, rap
+Morgan Wallen,One Thing At A Time,Man Made A Bar (feat. Eric Church),2023-03-03,81,contemporary country,False,5904499,73zawW1ttszLRgT9By826D,0.498,0.764,4,-5.006,1,0.0309,3.07e-05,0.119,0.489,147.984,191231,4,
+Mrs. GREEN APPLE,ケセラセラ,ケセラセラ,2023-04-25,76,anime rock,False,2593428,406ZlqOP9nLQxJFBY7d9S4,0.757,0.58,6,-4.574,0,0.0328,0,0.0367,0.698,115.01,272965,4, j-pop
+Bad Bunny,Un Verano Sin Ti,Tití Me Preguntó,2022-05-06,90,reggaeton,True,69334291,1IHWl5LamUGEuP4ozKQSXZ,0.65,0.715,5,-5.198,0,0.253,0.000291,0.126,0.187,106.672,243717,4, trap latino
+KAROL G,MAÑANA SERÁ BONITO,TQG,2023-02-24,96,reggaeton,True,35356609,0DWdj2oZMBFSzRsi2Cvfzf,0.72,0.63,4,-3.547,0,0.277,0,0.0936,0.607,179.974,199440,4, reggaeton colombiano
+Drake,"Honestly, Nevermind",Jimmy Cooks (feat. 21 Savage),2022-06-17,89,canadian hip hop,True,75347210,3F5CgOj3wFlRv51JsHbxhe,0.529,0.673,0,-4.711,1,0.175,2.41e-06,0.093,0.366,165.921,218365,4, canadian pop
+Metro Boomin,HEROES & VILLAINS,Superhero (Heroes & Villains) [with Future & Chris Brown],2022-12-02,90,rap,True,4312756,0vjeOZ3Ft5jvAi9SBFJm1j,0.526,0.606,5,-5.3,0,0.259,2.36e-06,0.194,0.492,116.622,182667,4, trap
+Morgan Wallen,If I Know Me,Chasin' You,2018-04-27,83,contemporary country,False,5904499,5MwynWK9s4hlyKHqhkNn4A,0.631,0.591,7,-5.785,1,0.0277,0,0.11,0.489,97.074,205453,4,
+Morgan Wallen,One Thing At A Time (Sampler),One Thing At A Time,2022-12-02,79,contemporary country,False,5904499,6KGtAlYvgm4W9PoYabFAYE,0.614,0.913,7,-5.126,1,0.0296,1.72e-06,0.26,0.92,141.982,206865,4,
+Morgan Wallen,3 Songs At A Time Sampler,Everything I Love,2023-01-31,72,contemporary country,False,5904499,0cv6mTbrqr8vxGC31NjKtM,0.566,0.845,8,-3.817,1,0.0265,0.000822,0.148,0.698,103.97,187047,4,
+Post Malone,Chemical,Chemical,2023-04-14,90,dfw rap,True,40660414,5w40ZYhbBMAlHYNDaVJIUu,0.498,0.897,2,-4.907,1,0.045,0,0.118,0.373,169.902,184013,4, melodic rap
+Morgan Wallen,Dangerous: The Double Album,Wasted On You,2021-01-08,86,contemporary country,False,5904499,3cBsEDNhFI9E82vPj3kvi3,0.505,0.657,11,-5.24,0,0.0318,0.00107,0.126,0.252,196.0,178520,3,
+Drake,Her Loss,Spin Bout U,2022-11-04,85,canadian hip hop,True,75347210,2ZL7WZcjuYKi1KUDtp4kCC,0.773,0.701,7,-6.386,1,0.0512,0,0.163,0.203,129.963,214589,4, canadian pop
+Taylor Swift,Midnights (3am Edition),Karma,2022-10-22,79,pop,True,74695770,5oqDgw5VGBln5dSIOPWyBq,0.649,0.622,8,-7.054,1,0.0582,0,0.594,0.106,90.024,204852,4,
+Fuerza Regida,Pa Que Hablen,Igualito a Mi Apá,2022-12-30,88,corrido,True,3252416,17js0w8GTkTUFGFM6PYvBd,0.758,0.812,4,-3.272,0,0.0854,0,0.0564,0.795,144.908,166821,4, corridos tumbados
+Morgan Wallen,Thought You Should Know,Thought You Should Know,2022-05-06,75,contemporary country,True,5904499,6NHpyYvJyQsg2nXXzGYc2R,0.529,0.695,6,-6.174,1,0.0278,1.24e-05,0.142,0.514,139.993,215572,4,
+Becky G,Chanel,Chanel,2023-03-30,91,latin pop,False,13399597,5RcxRGvmYai7kpFSfxe5GY,0.852,0.675,2,-5.738,1,0.0363,0.00317,0.0905,0.528,132.005,201993,3, latin viral pop
+Taylor Swift,Lover,Lover,2019-08-23,88,pop,False,74695770,1dGr1c8CrMLDpV6mPbImSI,0.359,0.543,7,-7.582,1,0.0919,1.58e-05,0.118,0.453,68.534,221307,4,
+Rod Wave,Fight The Feeling,Fight The Feeling,2023-03-31,78,florida rap,True,4826838,7l6nGz4gp6HGs5Cvmdeqe4,0.634,0.538,0,-9.213,1,0.0603,0,0.099,0.152,168.029,160714,5,
+Lil Baby,Sum 2 Prove,Sum 2 Prove,2020-01-10,72,atl hip hop,True,14144806,2u3EyuCqqV31woqGvO9LBz,0.823,0.552,4,-7.57,0,0.324,0,0.122,0.418,124.038,205760,4, atl trap
+MUKADE,KIMINOMAMA,KIMINOMAMA,2023-02-19,55,,False,1192,4O8Dy9kthy651s3M774S1h,0.836,0.771,7,-4.441,1,0.106,0,0.172,0.664,123.977,177581,4,
+"Tyler, The Creator",Flower Boy,See You Again (feat. Kali Uchis),2017-07-21,94,hip hop,True,11509527,7KA4W4McWYRpgf0fWsJZWB,0.558,0.559,6,-9.222,1,0.0959,7.49e-06,0.109,0.62,78.558,180387,4, rap
+OFFICIAL HIGE DANDISM,Tattoo,Tattoo,2023-04-21,60,anime,False,5617886,6wffxmLgeZTbvS1hYvLkht,0.481,0.901,0,-5.629,1,0.163,0,0.314,0.817,194.084,288100,4, anime rock
+Lil Baby,Go Hard,Go Hard,2023-05-03,81,atl hip hop,True,14144806,1IzJxbARcQrOWMZgPw1PNj,0.849,0.581,6,-5.464,0,0.261,0,0.092,0.274,142.015,217610,4, atl trap
+Future,FUTURE,Mask Off,2017-06-30,83,atl hip hop,True,13896500,0VgkVdmE4gld66l8iyGjgx,0.833,0.434,2,-8.795,1,0.431,0.0219,0.165,0.281,150.062,204600,4, hip hop
+Lil Baby,In A Minute,In A Minute,2022-04-07,72,atl hip hop,True,14144806,3ihIZrJreMJPjQdNLrEXnP,0.643,0.605,4,-5.968,0,0.297,0,0.112,0.145,84.216,200471,4, atl trap
+Taylor Swift,Speak Now,Enchanted,2010-10-25,81,pop,False,74695770,04S1pkp1VaIqjg8zZqknR5,0.535,0.618,8,-3.913,1,0.0273,0.000388,0.169,0.228,81.975,352200,4,
+Ed Sheeran,- (Deluxe),Boat,2023-05-05,78,pop,False,112123235,6jemILri7l5LuPhKs2nuXr,0.47,0.203,4,-8.676,1,0.0371,2.41e-06,0.312,0.325,153.578,185731,3, uk pop
+Vaundy,そんなbitterな話,そんなbitterな話,2023-03-13,76,j-pop,False,1589834,4QlSFkbRxZWkHDF1MqBaEY,0.427,0.689,9,-4.35,1,0.0354,0,0.102,0.733,178.077,276083,4, japanese soul
+aespa,MY WORLD - The 3rd Mini Album,Spicy,2023-05-08,82,k-pop,False,3165283,1ULdASrNy5rurl1TZfFaMP,0.757,0.898,11,-1.247,0,0.0667,0,0.0703,0.842,114.949,197040,4, k-pop girl group
+Morgan Wallen,One Thing At A Time,Ain’t That Some,2023-03-03,84,contemporary country,True,5904499,2YVlDlk2zRceefo6XlC6DX,0.641,0.803,6,-5.781,0,0.0286,3.86e-06,0.361,0.671,121.086,158004,4,
+The Weeknd,Starboy,Die For You,2016-11-25,87,canadian contemporary r&b,False,65034686,2Ch7LmS7r2Gy2kc64wv3Bz,0.582,0.525,1,-7.163,0,0.0627,0,0.134,0.51,133.249,260253,4, canadian pop
+Bad Bunny,Un Verano Sin Ti,Me Porto Bonito,2022-05-06,92,reggaeton,True,69334291,6Sq7ltF9Qa7SNFBsV5Cogx,0.911,0.712,1,-5.105,0,0.0817,2.68e-05,0.0933,0.425,92.005,178567,4, trap latino
+Morgan Wallen,One Thing At A Time,Cowgirls (feat. ERNEST),2023-03-03,83,contemporary country,False,5904499,7fveJ3pk1eSfxBdVkzdXZ0,0.624,0.766,8,-3.805,1,0.0359,8.62e-06,0.156,0.37,172.08,181621,4,
+NewJeans,NewJeans 'OMG',OMG,2023-01-02,92,k-pop,False,3387802,65FftemJ1DbbZ45DUfHJXE,0.804,0.771,9,-4.067,0,0.0433,3.07e-06,0.108,0.739,126.956,212253,4, k-pop girl group
+Zach Bryan,Something in the Orange,Something in the Orange,2022-04-22,88,classic oklahoma country,False,1444034,3WMj8moIAXJhHsyLaqIIHI,0.369,0.192,4,-12.151,0,0.04,8.35e-06,0.0954,0.148,175.212,228013,3, modern country pop
+The Weeknd,After Hours,Blinding Lights,2020-03-20,92,canadian contemporary r&b,False,65034686,0VjIjW4GlUZAMYd2vXMi3b,0.514,0.73,1,-5.934,1,0.0598,9.54e-05,0.0897,0.334,171.005,200040,4, canadian pop
+The Kid LAROI,STAY (with Justin Bieber),STAY (with Justin Bieber),2021-07-09,87,australian hip hop,True,4553375,5HCyWlXZPP0y6Gqq8TgA20,0.591,0.764,1,-5.484,1,0.0483,0,0.103,0.478,169.928,141806,4,
+Summer Walker,Last Day Of Summer,Karma,2018-10-19,75,r&b,False,5004250,2Fyjjpg03fn7n5cj0Qm380,0.593,0.294,1,-10.072,0,0.0499,2.03e-05,0.287,0.152,113.847,188907,4,
+Feid,Classy 101,Classy 101,2023-03-31,95,colombian pop,True,5302437,6XSqqQIy7Lm7SnwxS4NrGx,0.859,0.658,11,-4.79,1,0.159,0,0.12,0.672,100.065,195987,4, pop reggaeton
+Future,I NEVER LIKED YOU,PUFFIN ON ZOOTIEZ,2022-04-29,82,atl hip hop,True,13896500,1qMMYpVatbRITKCfq1gasi,0.883,0.657,8,-5.748,1,0.305,0,0.128,0.284,124.992,172933,4, hip hop
+J. Cole,2014 Forest Hills Drive,No Role Modelz,2014-12-09,90,conscious hip hop,True,20154942,68Dni7IE4VyPkTOH9mRWHr,0.69,0.521,10,-8.492,0,0.339,0,0.0534,0.494,100.028,292799,4, hip hop
+MAN WITH A MISSION,絆ノ奇跡,絆ノ奇跡,2023-04-10,80,anime rock,False,963299,2VBLFxCUyFp5BfmsZpxcis,0.436,0.951,7,-4.748,0,0.202,0,0.149,0.428,169.955,223320,4, j-pop
+Metro Boomin,HEROES & VILLAINS,Trance (with Travis Scott & Young Thug),2022-12-02,90,rap,True,4312756,5wG3HvLhF6Y5KTGlK0IW3J,0.571,0.549,1,-7.38,0,0.404,0,0.168,0.447,119.497,194787,4, trap
+Coi Leray,Players,Players,2022-11-30,92,new jersey underground rap,True,565129,6UN73IYd0hZxLi8wFPMQij,0.954,0.516,6,-5.817,1,0.16,7.54e-06,0.0504,0.624,105.001,139560,4, trap queen
+Lil Uzi Vert,Just Wanna Rock,Just Wanna Rock,2022-10-17,90,melodic rap,True,15097716,4FyesJzVpA39hbYvcseO2d,0.486,0.545,11,-7.924,1,0.0336,0.00474,0.0642,0.0385,150.187,123891,4, philly rap
+Ed Sheeran,÷ (Deluxe),Shape of You,2017-03-03,88,pop,False,112123235,7qiZfU4dY1lWllzX7mPBI3,0.825,0.652,1,-3.183,0,0.0802,0,0.0931,0.931,95.977,233713,4, uk pop
+Morgan Wallen,3 Songs At A Time Sampler,I Wrote The Book,2023-01-31,64,contemporary country,False,5904499,4w9lk0Nyj7kuDxlL5PZVlv,0.682,0.809,2,-3.755,1,0.0414,4.74e-05,0.082,0.788,143.979,181767,4,
+Kendrick Lamar,"good kid, m.A.A.d city (Deluxe)",Money Trees,2012-10-22,76,conscious hip hop,True,24009002,0UtnpKaReKUg2GquaSxCyD,0.716,0.531,7,-7.355,1,0.122,0,0.224,0.344,71.994,386907,4, hip hop
+OneRepublic,"I Ain’t Worried (Music From The Motion Picture ""Top Gun: Maverick"")",I Ain't Worried,2022-05-13,93,piano rock,False,15581759,4h9wh7iOZ0GGn8QVp4RAOB,0.704,0.797,0,-5.927,1,0.0475,0.000745,0.0546,0.825,139.994,148486,4, pop
+SZA,SOS,Nobody Gets Me,2022-12-09,86,pop,True,12599639,5Y35SjAfXjjG0sFQ3KOxmm,0.358,0.284,7,-8.285,1,0.0285,0,0.183,0.276,99.796,180853,3, r&b
+Morgan Wallen,One Thing At A Time,’98 Braves,2023-03-03,80,contemporary country,False,5904499,3oZ6dlSfCE9gZ55MGPJctc,0.488,0.67,2,-5.759,1,0.0268,0.00022,0.257,0.484,142.139,178704,4,
+NewJeans,NewJeans 'OMG',Ditto,2023-01-02,71,k-pop,False,3387802,5702raF31K9rvD6KZ6sCTo,0.814,0.641,6,-5.957,0,0.111,0,0.0993,0.183,133.854,185507,4, k-pop girl group
+SZA,Good Days,Good Days,2020-12-25,81,pop,True,12599639,3YJJjQPAbDT7mGpX3WtQ9A,0.436,0.655,1,-8.37,0,0.0583,8.1e-06,0.688,0.412,121.002,279204,4, r&b
+Fuerza Regida,Bebe Dame,Bebe Dame,2022-12-16,88,corrido,False,3252416,0mzsLrUNazBaRfYZfjmpSV,0.537,0.602,7,-4.631,1,0.0458,0,0.0715,0.753,157.437,271862,4, corridos tumbados
+Sam Smith,Unholy (feat. Kim Petras),Unholy (feat. Kim Petras),2022-09-22,91,pop,False,22558721,3nqQXoyQOWXiESFLlDF1hG,0.714,0.472,2,-7.375,1,0.0864,4.51e-06,0.266,0.238,131.121,156943,4, uk pop
