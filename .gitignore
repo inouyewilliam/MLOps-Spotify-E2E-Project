@@ -1,6 +1,6 @@
 /.ipynb_checkpoints
 /mlruns
 /.cache
-secret.txt
 temp.csv
 .env
+experiment.txt

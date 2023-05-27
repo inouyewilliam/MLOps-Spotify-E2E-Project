@@ -3,18 +3,30 @@ on: [push]
 jobs:
   CICD-and-report:
     runs-on: ubuntu-latest
+    env:
+      DAGSHUB_USERNAME: ${{ secrets.DAGSHUB_USERNAME }}
+      DAGSHUB_API_TOKEN: ${{ secrets.DAGSHUB_API_TOKEN }}
+      MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
+      MLFLOW_API_TOKEN: ${{ secrets.MLFLOW_API_TOKEN }}
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-      - uses: iterative/setup-cml@v1
-      - uses: iterative/setup-dvc@v1
+
+      - name: Set up DVC
+        uses: iterative/setup-dvc@v1
+
       - name: CICD
         run: |
           pip install -r requirements.txt # install python packages
           dvc pull -r origin # pull data from remote repo
           dvc repro # run the CI/CD Pipeline
+          dvc push -r origin # pull data to remote repo
                 
       #- name: report
           # Create CML report

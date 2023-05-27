@@ -368,7 +368,7 @@ if __name__ == "__main__":
         mlflow.log_metric("f1 score", f1)
 
         # Register the model           
-        mlflow.xgboost.log_model(random_search, "model", registered_model_name="XGBModel")
+        mlflow.sklearn.log_model(random_search, "model", registered_model_name="XGBModel")
 
 #------------------- Train Random Forest model
 
