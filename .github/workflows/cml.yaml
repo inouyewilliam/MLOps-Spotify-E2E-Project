@@ -31,11 +31,7 @@ jobs:
             DAGSHUB_API_TOKEN: ${{ secrets.DAGSHUB_API_TOKEN }}
         run: |
           echo "machine dagshub.com login $DAGSHUB_USERNAME token $DAGSHUB_API_TOKEN" > ~/.netrc
-  
-      - name: Pull data from remote repo
-        run: | 
-          dvc pull
-        
+         
       - name: Run dvc pipeline
         run: | 
           dvc repro
