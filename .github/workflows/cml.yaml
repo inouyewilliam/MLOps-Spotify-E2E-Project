@@ -21,12 +21,28 @@ jobs:
       - name: Set up DVC
         uses: iterative/setup-dvc@v1
 
-      - name: CICD
+      - name: Install dependencies
         run: |
-          pip install -r requirements.txt # install python packages
-          dvc pull -r origin # pull data from remote repo
-          dvc repro # run the CI/CD Pipeline
-          dvc push -r origin # pull data to remote repo
+          pip install -r requirements.txt
+
+      - name: Authenticate with DAGsHub
+        env:
+            DAGSHUB_USERNAME: ${{ secrets.DAGSHUB_USERNAME }}
+            DAGSHUB_API_TOKEN: ${{ secrets.DAGSHUB_API_TOKEN }}
+        run: |
+          echo "machine dagshub.com login $DAGSHUB_USERNAME token $DAGSHUB_API_TOKEN" > ~/.netrc
+  
+      - name: Pull data from remote repo
+        run: | 
+          dvc pull
+        
+      - name: Run dvc pipeline
+        run: | 
+          dvc repro
+
+      - name: push data to remote repo
+        run: |                  
+          dvc push
                 
       #- name: report
           # Create CML report
