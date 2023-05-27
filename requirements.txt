@@ -13,3 +13,4 @@ evidently
 joblib
 dvc
 python-dotenv
+pathlib
