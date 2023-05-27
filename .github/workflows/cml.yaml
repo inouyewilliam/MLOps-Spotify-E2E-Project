@@ -8,6 +8,8 @@ jobs:
       DAGSHUB_API_TOKEN: ${{ secrets.DAGSHUB_API_TOKEN }}
       MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
       MLFLOW_API_TOKEN: ${{ secrets.MLFLOW_API_TOKEN }}
+      CLIENT_ID: ${{ secrets.CLIENT_ID }}
+      CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
     steps:
       - name: Checkout code
@@ -31,10 +33,22 @@ jobs:
             DAGSHUB_API_TOKEN: ${{ secrets.DAGSHUB_API_TOKEN }}
         run: |
           echo "machine dagshub.com login $DAGSHUB_USERNAME token $DAGSHUB_API_TOKEN" > ~/.netrc
-         
+      
+      - name: Set up environment variables
+        env:
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          echo "CLIENT_ID=${CLIENT_ID}" >> .env
+          echo "CLIENT_SECRET=${CLIENT_SECRET}" >> .env   
+          
       - name: Run dvc pipeline
         run: | 
           dvc repro
+          
+      - name: Clean up environment variables
+        run: |
+          rm .env
 
       - name: push data to remote repo
         run: |                  
