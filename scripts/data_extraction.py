@@ -190,9 +190,9 @@ def clean_genres(df):
 
 # Export to csv
 Raw_data_df = clean_genres(Raw_data_df)
-Raw_data_df.to_csv("C:/Users/willi/Python/Spotify_Project/Data/raw_data.csv", index = False)
+Raw_data_df.to_csv("Data/raw_data.csv", index = False)
 
 
 # Export to csv
 New_data_df = clean_genres(New_data_df)
-New_data_df.to_csv("C:/Users/willi/Python/Spotify_Project/Data/new_data.csv", index = False)
+New_data_df.to_csv("Data/new_data.csv", index = False)
