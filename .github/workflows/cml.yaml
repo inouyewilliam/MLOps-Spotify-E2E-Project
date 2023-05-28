@@ -55,7 +55,7 @@ jobs:
           dvc remote modify origin --local auth basic
           dvc remote modify origin --local user ${{ secrets.DAGSHUB_USERNAME }}
           dvc remote modify origin --local password ${{ secrets.DAGSHUB_API_TOKEN }}
-          dvc pull -r origin Data
+          dvc pull -r origin /Data
           
       - name: Run dvc pipeline
         run: | 
@@ -64,6 +64,12 @@ jobs:
       - name: Clean up environment variables
         run: |
           rm .env
+          
+      - name: commit and push updates to github
+        run: |                  
+          git add .
+          git commit -m 'workflow complete'
+          git push origin main
 
       - name: push data to remote repo
         run: |                  
