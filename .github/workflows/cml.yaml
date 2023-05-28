@@ -19,20 +19,28 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+          cache: pip
 
       - name: Set up DVC
         uses: iterative/setup-dvc@v1
+        
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
 
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
 
-      - name: Authenticate with DAGsHub
-        env:
-            DAGSHUB_USERNAME: ${{ secrets.DAGSHUB_USERNAME }}
-            DAGSHUB_API_TOKEN: ${{ secrets.DAGSHUB_API_TOKEN }}
-        run: |
-          echo "machine dagshub.com login $DAGSHUB_USERNAME token $DAGSHUB_API_TOKEN" > ~/.netrc
+      #- name: Authenticate with DAGsHub
+        #env:
+            #DAGSHUB_USERNAME: ${{ secrets.DAGSHUB_USERNAME }}
+            #DAGSHUB_API_TOKEN: ${{ secrets.DAGSHUB_API_TOKEN }}
+        #run: |
+          #echo "machine dagshub.com login $DAGSHUB_USERNAME token $DAGSHUB_API_TOKEN" > ~/.netrc
       
       - name: Set up environment variables
         env:
@@ -40,7 +48,14 @@ jobs:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           echo "CLIENT_ID=${CLIENT_ID}" >> .env
-          echo "CLIENT_SECRET=${CLIENT_SECRET}" >> .env   
+          echo "CLIENT_SECRET=${CLIENT_SECRET}" >> .env
+          
+      - name: Pull data
+        run: |
+          dvc remote modify origin --local auth basic
+          dvc remote modify origin --local user ${{ secrets.DAGSHUB_USERNAME }}
+          dvc remote modify origin --local password ${{ secrets.DAGSHUB_API_TOKEN }}
+          dvc pull -r origin Data
           
       - name: Run dvc pipeline
         run: | 
