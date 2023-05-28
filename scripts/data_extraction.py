@@ -4,6 +4,9 @@ from dotenv import find_dotenv, load_dotenv
 import pandas as pd
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
+import logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
+
 
 #Autentification
 dotenv_path = find_dotenv()
@@ -15,6 +18,7 @@ CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
 sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
 
+logging.info('Credentials OK')
 
 #Playlists Link
 #2005
@@ -172,9 +176,14 @@ def analyze_playlist_dict(playlist_dict):
             
     return playlist_dict_df
 
+logging.info('Functions OK')
+
 Raw_data_df = analyze_playlist_dict(playlist_dict)
 
 New_data_df = analyze_playlist("sp", playlist_global)
+
+
+logging.info('Data OK')
 
 def clean_genres(df):
     # Clean genres column
@@ -190,9 +199,11 @@ def clean_genres(df):
 
 # Export to csv
 Raw_data_df = clean_genres(Raw_data_df)
-Raw_data_df.to_csv("Data/raw_data.csv", index = False)
+Raw_data_df.to_csv("C:/Users/willi/Python/Spotify_Project/Data/raw_data.csv", index = False)
 
 
 # Export to csv
 New_data_df = clean_genres(New_data_df)
-New_data_df.to_csv("Data/new_data.csv", index = False)
+New_data_df.to_csv("C:/Users/willi/Python/Spotify_Project/Data/new_raw_data.csv", index = False)
+
+logging.info('export OK')
