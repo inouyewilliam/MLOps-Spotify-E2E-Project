@@ -63,7 +63,7 @@ if __name__ == "__main__":
     
     # Read the final csv file
     csv = (
-            "Data/final_data.csv"
+            "C:/Users/willi/Python/Spotify_Project/Data/final_data.csv"
         )
     try:
             data = pd.read_csv(csv, sep=",", dtype = dtype)
@@ -170,7 +170,7 @@ if __name__ == "__main__":
     
     # Read the final csv file
     csv = (
-            "Data/final_data.csv"
+            "C:/Users/willi/Python/Spotify_Project/Data/final_data.csv"
         )
     try:
             data = pd.read_csv(csv, sep=",", dtype = dtype)
@@ -273,7 +273,7 @@ if __name__ == "__main__":
     np.random.seed(42)
     # Read the final csv file
     csv = (
-            "Data/final_data.csv"
+            "C:/Users/willi/Python/Spotify_Project/Data/final_data.csv"
         )
     try:
             data = pd.read_csv(csv, sep=",", dtype = dtype)
@@ -379,7 +379,7 @@ if __name__ == "__main__":
     
     # Read the final csv file
     csv = (
-            "Data/final_data.csv"
+            "C:/Users/willi/Python/Spotify_Project/Data/final_data.csv"
         )
     try:
             data = pd.read_csv(csv, sep=",", dtype = dtype)
@@ -483,7 +483,7 @@ if __name__ == "__main__":
     
     # Read the final csv file
     csv = (
-            "Data/final_data.csv"
+            "C:/Users/willi/Python/Spotify_Project/Data/final_data.csv"
         )
     try:
             data = pd.read_csv(csv, sep=",", dtype = dtype)

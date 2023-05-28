@@ -4,8 +4,6 @@ import pandas as pd
 from model_deployment import mood_prediction
 from pathlib import Path
 
-from sklearn.model_selection import train_test_split
-
 from evidently.pipeline.column_mapping import ColumnMapping
 from evidently.options import ColorOptions
 from evidently.report import Report
@@ -46,13 +44,13 @@ dtype = {
 
 #Load Data
 csv = (
-        "Data/preprocess_data.csv"
+        "C:/Users/willi/Python/Spotify_Project/Data/preprocess_data.csv"
         )
 
 data = pd.read_csv(csv, sep=",", dtype = dtype)
 
 csv = (
-        "Data/preprocess_new_data.csv"
+        "C:/Users/willi/Python/Spotify_Project/Data/preprocess_new_data.csv"
         )
 
 new_data = pd.read_csv(csv, sep=",",dtype=dtype)
@@ -63,7 +61,7 @@ prediction = 'prediction'
 numerical_features = ['popularity', 'followers', 'danceability', 'energy', 'loudness', 'tempo','duration_ms']
 categorical_features = ['genres', 'sub-genres', 'explicit','liveness','instrumentalness','key','mode','time_signature']
 
-reports_dir = Path('reports') #/ f'{today}'
+reports_dir = Path('C:/Users/willi/Python/Spotify_Project/reports') #/ f'{today}'
 reports_dir.mkdir(exist_ok=True)
 
 

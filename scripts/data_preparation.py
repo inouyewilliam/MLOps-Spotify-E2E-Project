@@ -4,9 +4,9 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler, Normalizer, LabelEncoder
 
-df = pd.read_csv("Data/raw_data.csv", sep=",")
+df = pd.read_csv("C:/Users/willi/Python/Spotify_Project/Data/raw_data.csv", sep=",")
 
-df_new = pd.read_csv("Data/new_data.csv", sep=",")
+df_new = pd.read_csv("C:/Users/willi/Python/Spotify_Project/Data/new_raw_data.csv", sep=",")
 
 def preprocess(df):
        # Change order of columns
@@ -59,8 +59,8 @@ new_train = preprocess(df_new)
 final_train = pd.concat([train, new_train])
 
 #Save the complete preprocess data
-train.to_csv("Data/preprocess_data.csv", index = False)
+train.to_csv("C:/Users/willi/Python/Spotify_Project/Data/preprocess_data.csv", index = False)
 
-new_train.to_csv("Data/preprocess_new_data.csv", index = False)
+new_train.to_csv("C:/Users/willi/Python/Spotify_Project/Data/preprocess_new_data.csv", index = False)
 
-final_train.to_csv("Data/final_data.csv", index = False)
+final_train.to_csv("C:/Users/willi/Python/Spotify_Project/Data/final_data.csv", index = False)

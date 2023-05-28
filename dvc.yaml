@@ -5,14 +5,14 @@ stages:
     - scripts/data_extraction.py 
     outs:
     - Data/raw_data.csv
-    - Data/new_data.csv
+    - Data/new_raw_data.csv
 
   preparation:
-    cmd: python scripts/data_preparation.py Data/raw_data.csv Data/new_data.csv
+    cmd: python scripts/data_preparation.py Data/raw_data.csv Data/new_raw_data.csv
     deps:
     - scripts/data_preparation.py
     - Data/raw_data.csv
-    - Data/new_data.csv
+    - Data/new_raw_data.csv
     outs:
     - Data/preprocess_data.csv
     - Data/preprocess_new_data.csv
