@@ -6,8 +6,8 @@ jobs:
     env:
       DAGSHUB_USERNAME: ${{ secrets.DAGSHUB_USERNAME }}
       DAGSHUB_API_TOKEN: ${{ secrets.DAGSHUB_API_TOKEN }}
-      MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
-      MLFLOW_API_TOKEN: ${{ secrets.MLFLOW_API_TOKEN }}
+      #MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
+      #MLFLOW_API_TOKEN: ${{ secrets.MLFLOW_API_TOKEN }}
       CLIENT_ID: ${{ secrets.CLIENT_ID }}
       CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
@@ -64,16 +64,10 @@ jobs:
       - name: Clean up environment variables
         run: |
           rm .env
-          
-      - name: commit and push updates to github
-        run: |                  
-          git add .
-          git commit -m 'workflow complete'
-          git push origin main
 
       - name: push data to remote repo
         run: |                  
-          dvc push
+          dvc push -r origin
                 
       #- name: report
           # Create CML report

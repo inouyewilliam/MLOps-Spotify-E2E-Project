@@ -16,13 +16,13 @@ stages:
     outs:
     - Data/preprocess_data.csv
     - Data/preprocess_new_data.csv
-    - Data/preprocess_final_data.csv
+    - Data/final_data.csv
   
   training:
-    cmd: python scripts/model_training.py Data/preprocess_final_data.csv
+    cmd: python scripts/model_training.py Data/final_data.csv
     deps:
     - scripts/model_training.py
-    - Data/preprocess_final_data.csv
+    - Data/final_data.csv
   
   monitoring:
     cmd: python scripts/model_monitoring.py Data/preprocess_data.csv Data/preprocess_new_data.csv

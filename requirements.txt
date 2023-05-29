@@ -9,6 +9,7 @@ seaborn
 lightgbm
 xgboost
 streamlit
+streamlit-option-menu
 evidently
 joblib
 dvc
