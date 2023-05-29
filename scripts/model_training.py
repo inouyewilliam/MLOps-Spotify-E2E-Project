@@ -133,7 +133,6 @@ if __name__ == "__main__":
         random_search.fit(X_train, y_train)
         
         # Infer the model signature
-        #y_pred = random_search.predict(X_test)
         signature = infer_signature(X, random_search.predict(X))
         
         # Model Evaluation
@@ -241,6 +240,9 @@ if __name__ == "__main__":
         
         random_search.fit(X_train, y_train)
         
+        # Infer the model signature
+        signature = infer_signature(X, random_search.predict(X))
+        
         # Model Evaluation
         (cv_score,roc_auc,average_precision,accuracy,precision,recall,f1) = evaluate_model(random_search, X, y, X_test, y_test)
 
@@ -264,7 +266,7 @@ if __name__ == "__main__":
         mlflow.log_metric("f1 score", f1)
 
         # Register the model           
-        mlflow.sklearn.log_model(random_search, "model", registered_model_name="ExtraTreeModel")
+        mlflow.sklearn.log_model(random_search, "model", signature = signature, registered_model_name="ExtraTreeModel")
 
 #------------------- Train XGBoost model
 if __name__ == "__main__":
@@ -345,6 +347,9 @@ if __name__ == "__main__":
         
         random_search.fit(X_train, y_train)
         
+        # Infer the model signature
+        signature = infer_signature(X, random_search.predict(X))
+        
         # Model Evaluation
         (cv_score,roc_auc,average_precision,accuracy,precision,recall,f1) = evaluate_model(random_search, X, y, X_test, y_test)
 
@@ -368,7 +373,7 @@ if __name__ == "__main__":
         mlflow.log_metric("f1 score", f1)
 
         # Register the model           
-        mlflow.sklearn.log_model(random_search, "model", registered_model_name="XGBModel")
+        mlflow.sklearn.log_model(random_search, "model",signature = signature, registered_model_name="XGBModel")
 
 #------------------- Train Random Forest model
 
@@ -449,6 +454,9 @@ if __name__ == "__main__":
         
         random_search.fit(X_train, y_train)
         
+        # Infer the model signature
+        signature = infer_signature(X, random_search.predict(X))
+        
         # Model Evaluation
         (cv_score,roc_auc,average_precision,accuracy,precision,recall,f1) = evaluate_model(random_search, X, y, X_test, y_test)
 
@@ -472,7 +480,7 @@ if __name__ == "__main__":
         mlflow.log_metric("f1 score", f1)
 
         # Register the model           
-        mlflow.sklearn.log_model(random_search, "model", registered_model_name="RandomForestModel")
+        mlflow.sklearn.log_model(random_search, "model", signature=signature, registered_model_name="RandomForestModel")
 
 #------------------- Train Gradient Boosting model
 
@@ -554,6 +562,9 @@ if __name__ == "__main__":
         
         random_search.fit(X_train, y_train)
         
+        # Infer the model signature
+        signature = infer_signature(X, random_search.predict(X))
+        
         # Model Evaluation
         (cv_score,roc_auc,average_precision,accuracy,precision,recall,f1) = evaluate_model(random_search, X, y, X_test, y_test)
 
@@ -577,4 +588,4 @@ if __name__ == "__main__":
         mlflow.log_metric("f1 score", f1)
 
         # Register the model     
-        mlflow.sklearn.log_model(random_search, "model", registered_model_name="GradientBoostingModel")
+        mlflow.sklearn.log_model(random_search, "model", signature=signature, registered_model_name="GradientBoostingModel")

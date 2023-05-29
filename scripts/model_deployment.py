@@ -6,7 +6,7 @@ from sklearn.metrics import f1_score, confusion_matrix, accuracy_score, roc_auc_
 from sklearn.model_selection import cross_val_score
 from dotenv import find_dotenv, load_dotenv
 import mlflow
-import mlflow.pyfunc
+import mlflow.sklearn
 
 # Create evaluation function
 def evaluate_model(model, X, y, X_test, y_test):
@@ -43,11 +43,13 @@ def mood_prediction(music):
     
     logged_model = 'runs:/5cf7eb61d49d4df4b38bbfa2ed92cd4c/model'
     
-    loaded_model = mlflow.pyfunc.load_model(logged_model)
+    loaded_model = mlflow.sklearn.load_model(logged_model)
     
     if isinstance(music, pd.DataFrame):
         predictions = loaded_model.predict(music)
+        predictions_proba = loaded_model.predict_proba(music)
     else:
         predictions = loaded_model.predict(pd.read_csv(music))
+        predictions_proba = loaded_model.predict_proba(pd.read_csv(music))
         
-    return list(predictions)
+    return list(predictions),list(predictions_proba)
