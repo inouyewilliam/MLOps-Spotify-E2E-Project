@@ -42,8 +42,8 @@ stages:
       md5: a983ec88675ab760840f8d42e6baffa8
       size: 126953
     - path: scripts/model_training.py
-      md5: 110e95465bb3687c39ac01867dc882ce
-      size: 21415
+      md5: a4aeae217cc7e22f8e8df80cc9c98e25
+      size: 21905
   monitoring:
     cmd: python scripts/model_monitoring.py Data/preprocess_data.csv Data/preprocess_new_data.csv
     deps:
