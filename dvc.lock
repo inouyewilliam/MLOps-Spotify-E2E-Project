@@ -4,25 +4,68 @@ stages:
     cmd: python scripts/data_extraction.py
     deps:
     - path: scripts/data_extraction.py
-      md5: bd26ebf08bb34765b069f74b78a01c40
-      size: 7834
+      md5: 5e5df70631087f04ca64a7661629a9f6
+      size: 8131
     outs:
-    - path: Data/new_data.csv
-      md5: ca72aa9fec59c25f82c836ef67b12c14
-      size: 17905
+    - path: Data/new_raw_data.csv
+      md5: 48edf7a7ef2bb75c29e21ac78c42aab3
+      size: 17878
     - path: Data/raw_data.csv
-      md5: f7458ceead64321e158308ccb117e799
-      size: 330310
+      md5: 6751f90e1d63654252c867aca1192056
+      size: 330291
   preparation:
-    cmd: python scripts/data_preparation.py Data/raw_data.csv
+    cmd: python scripts/data_preparation.py Data/raw_data.csv Data/new_raw_data.csv
     deps:
+    - path: Data/new_raw_data.csv
+      md5: 48edf7a7ef2bb75c29e21ac78c42aab3
+      size: 17878
     - path: Data/raw_data.csv
-      md5: 032d306822104036fa9813ff87613ea6
-      size: 355446
+      md5: 6751f90e1d63654252c867aca1192056
+      size: 330291
     - path: scripts/data_preparation.py
-      md5: edd57826455099fa45fea3031f9d6840
-      size: 2021
+      md5: ace5abef248cb3fe8147859339871ee2
+      size: 2799
     outs:
+    - path: Data/final_data.csv
+      md5: a983ec88675ab760840f8d42e6baffa8
+      size: 126953
     - path: Data/preprocess_data.csv
-      md5: d384ebb8283b703dc289838a47c28eca
-      size: 120349
+      md5: a01d43b0195eb4a6c299bed2b844ccd6
+      size: 120439
+    - path: Data/preprocess_new_data.csv
+      md5: 4d20b4bd5844292f71f36a1d66a52313
+      size: 6665
+  training:
+    cmd: python scripts/model_training.py Data/final_data.csv
+    deps:
+    - path: Data/final_data.csv
+      md5: a983ec88675ab760840f8d42e6baffa8
+      size: 126953
+    - path: scripts/model_training.py
+      md5: 110e95465bb3687c39ac01867dc882ce
+      size: 21415
+  monitoring:
+    cmd: python scripts/model_monitoring.py Data/preprocess_data.csv Data/preprocess_new_data.csv
+    deps:
+    - path: Data/preprocess_data.csv
+      md5: a01d43b0195eb4a6c299bed2b844ccd6
+      size: 120439
+    - path: Data/preprocess_new_data.csv
+      md5: 4d20b4bd5844292f71f36a1d66a52313
+      size: 6665
+    - path: scripts/model_monitoring.py
+      md5: fcdc9e4f9f7845c7da960318fd13d511
+      size: 4542
+    outs:
+    - path: reports/classification_report.html
+      md5: d0fc1636ca51878192fd128de4a27c48
+      size: 2744580
+    - path: reports/data_drift.html
+      md5: 5f598ca6ba3edcc9a30234203689b138
+      size: 2901592
+    - path: reports/data_quality.html
+      md5: 060f67d7ffb3d76d99a80c37678ad08d
+      size: 2874293
+    - path: reports/target_drift.html
+      md5: 6110a9a1a03df062963eb878fc09a726
+      size: 2749841
