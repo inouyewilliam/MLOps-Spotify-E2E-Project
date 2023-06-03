@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 import os
-from sklearn.metrics import f1_score, confusion_matrix, accuracy_score, roc_auc_score, precision_score, recall_score,roc_auc_score, average_precision_score
+from sklearn.metrics import f1_score, accuracy_score, roc_auc_score, precision_score, recall_score,roc_auc_score, average_precision_score
 from sklearn.model_selection import cross_val_score
 from dotenv import find_dotenv, load_dotenv
 import mlflow
@@ -41,7 +41,7 @@ def mood_prediction(music):
     
     mlflow.set_tracking_uri("https://dagshub.com/inouyewilliam/Master-Thesis.mlflow")
     
-    logged_model = 'runs:/5cf7eb61d49d4df4b38bbfa2ed92cd4c/model'
+    logged_model = 'runs:/ea813c924f4a42efb982cba61f402a85/model'
     
     loaded_model = mlflow.sklearn.load_model(logged_model)
     

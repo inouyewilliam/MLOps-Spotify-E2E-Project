@@ -48,7 +48,6 @@ dtype = {
        'loudness': float,
        'mode':'int8', 
        'instrumentalness':'int8',
-       'liveness':'int8',
        'tempo':float, 
        'duration_ms':int,
        'time_signature':'int8',
@@ -82,7 +81,7 @@ if __name__ == "__main__":
 
     # Perform Feature Selection to find the best K
     
-    def select_k_best(X, y, estimator, k_values=[2, 5, 7, 10, 12, 15]):
+    def select_k_best(X, y, estimator, k_values=[2, 5, 7, 10, 12, 14]):
         best_k = 0
         best_score = float('-inf')
         best_selector = None
@@ -104,7 +103,7 @@ if __name__ == "__main__":
         return best_k
     
     estimator = LGBMClassifier()
-    best_k = select_k_best(X_train, y_train, estimator, k_values=[2, 5, 7, 10, 12, 15])
+    best_k = select_k_best(X_train, y_train, estimator, k_values=[2, 5, 7, 10, 12, 14])
     
 
     with mlflow.start_run():
@@ -188,7 +187,7 @@ if __name__ == "__main__":
         
     # Perform Feature Selection to find the best K
     
-    def select_k_best(X, y, estimator, k_values=[2, 5, 7, 10, 12, 15]):
+    def select_k_best(X, y, estimator, k_values=[2, 5, 7, 10, 12, 14]):
         best_k = 0
         best_score = float('-inf')
         best_selector = None
@@ -210,7 +209,7 @@ if __name__ == "__main__":
         return best_k
     
     estimator = ExtraTreesClassifier()
-    best_k = select_k_best(X_train, y_train, estimator, k_values=[2, 5, 7, 10, 12, 15])
+    best_k = select_k_best(X_train, y_train, estimator, k_values=[2, 5, 7, 10, 12, 14])
     
 
     with mlflow.start_run():
@@ -295,7 +294,7 @@ if __name__ == "__main__":
        
     # Perform Feature Selection to find the best K
     
-    def select_k_best(X, y, estimator, k_values=[2, 5, 7, 10, 12, 15]):
+    def select_k_best(X, y, estimator, k_values=[2, 5, 7, 10, 12, 14]):
         best_k = 0
         best_score = float('-inf')
         best_selector = None
@@ -317,7 +316,7 @@ if __name__ == "__main__":
         return best_k
     
     estimator = XGBClassifier()
-    best_k = select_k_best(X_train, y_train, estimator, k_values=[2, 5, 7, 10, 12, 15])
+    best_k = select_k_best(X_train, y_train, estimator, k_values=[2, 5, 7, 10, 12, 14])
     
 
     with mlflow.start_run():
@@ -403,7 +402,7 @@ if __name__ == "__main__":
 
     # Perform Feature Selection to find the best K
     
-    def select_k_best(X, y, estimator, k_values=[2, 5, 7, 10, 12, 15]):
+    def select_k_best(X, y, estimator, k_values=[2, 5, 7, 10, 12, 14]):
         best_k = 0
         best_score = float('-inf')
         best_selector = None
@@ -425,7 +424,7 @@ if __name__ == "__main__":
         return best_k
     
     estimator = RandomForestClassifier()
-    best_k = select_k_best(X_train, y_train, estimator, k_values=[2, 5, 7, 10, 12, 15])
+    best_k = select_k_best(X_train, y_train, estimator, k_values=[2, 5, 7, 10, 12, 14])
     
 
     with mlflow.start_run():
@@ -510,7 +509,7 @@ if __name__ == "__main__":
 
     # Perform Feature Selection to find the best K
     
-    def select_k_best(X, y, estimator, k_values=[2, 5, 7, 10, 12, 15]):
+    def select_k_best(X, y, estimator, k_values=[2, 5, 7, 10, 12, 14]):
         best_k = 0
         best_score = float('-inf')
         best_selector = None
@@ -532,7 +531,7 @@ if __name__ == "__main__":
         return best_k
     
     estimator = GradientBoostingClassifier()
-    best_k = select_k_best(X_train, y_train, estimator, k_values=[2, 5, 7, 10, 12, 15])
+    best_k = select_k_best(X_train, y_train, estimator, k_values=[2, 5, 7, 10, 12, 14])
     
 
     with mlflow.start_run():

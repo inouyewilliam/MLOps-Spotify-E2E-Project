@@ -41,7 +41,6 @@ def user_input_features():
         loudness = st.sidebar.slider('loudness', -60, 0, -30)
         mode = st.sidebar.selectbox('mode', ('1','0'))
         instrumentalness = st.sidebar.selectbox('instrumentalness', ('1','0'))
-        liveness = st.sidebar.selectbox('liveness', ('1','0'))
         tempo = st.sidebar.slider('tempo', 60, 200, 100)
         duration_ms = st.sidebar.slider('duration_ms', 90000, 600000, 300000)
         time_signature = st.sidebar.selectbox('time_signature', ('1','3','4','5'))
@@ -56,7 +55,6 @@ def user_input_features():
                  'loudness' : loudness,
                  'mode' : mode,
                  'instrumentalness' :instrumentalness,
-                 'liveness' :liveness,
                  'tempo' : tempo,
                  'duration_ms' : duration_ms,
                  'time_signature' : time_signature

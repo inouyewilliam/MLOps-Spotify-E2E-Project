@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 from sklearn.impute import SimpleImputer
-from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler, Normalizer, LabelEncoder
 
 df = pd.read_csv("C:/Users/willi/Python/Spotify_Project/Data/raw_data.csv", sep=",")
@@ -22,9 +21,7 @@ def preprocess(df):
        df["speechiness"] = [1 if i > 0.66 else 0 for i in df.speechiness]
        df["instrumentalness"] = [1 if i > 0.5 else 0 for i in df.instrumentalness]
 
-       # Drop column valence
-       df = df.drop(columns = ["valence"],axis = 1)
-
+       
        # Improve data types
        df['popularity'] = df['popularity'].astype('int8')
        df['time_signature'] = df['time_signature'].astype('int8')
@@ -34,8 +31,7 @@ def preprocess(df):
        df['mode'] = df['mode'].astype('int8')
        df['explicit'] =  df['explicit'].astype('int8')         
        df['instrumentalness'] = df['instrumentalness'].astype('int8')
-       df['liveness'] = df['liveness'].astype('int8')
-
+      
        # Transform nan to zeros and 
        df["genres"].replace(np.nan, 0, inplace=True)
        df["sub-genres"].replace(np.nan, 0, inplace=True)
@@ -46,7 +42,7 @@ def preprocess(df):
        df['sub-genres'] = le.fit_transform(df['sub-genres'].astype(str))
        
        # Build train dataset
-       df = df.drop(columns = ['artist', 'album', 'track_name','release_date','track_id','speechiness'], axis = 1)
+       df = df.drop(columns = ['valence','artist', 'album', 'track_name','release_date','track_id','speechiness','liveness'], axis = 1)
        
        return df
 
