@@ -35,6 +35,7 @@ stages:
     - reports/data_drift.html
     - reports/target_drift.html
     - reports/data_quality.html
+    - reports/test_classification_report.html
 
   #application:
     #cmd: python scripts/application.py Data/preprocess_new_data.csv

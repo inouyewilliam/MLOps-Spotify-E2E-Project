@@ -6,11 +6,13 @@ from pathlib import Path
 
 from evidently.pipeline.column_mapping import ColumnMapping
 from evidently.options import ColorOptions
+from evidently.test_suite import TestSuite
 from evidently.report import Report
 from evidently.metric_preset import DataDriftPreset
 from evidently.metric_preset import DataQualityPreset
 from evidently.metric_preset import TargetDriftPreset
 from evidently.metric_preset import ClassificationPreset
+from evidently.test_preset import BinaryClassificationTestPreset
 
 from evidently.metrics import (
     ClassificationQualityMetric,
@@ -69,8 +71,8 @@ reports_dir.mkdir(exist_ok=True)
 X_data = data.drop("mood", axis=1)
 X_new_data = new_data.drop("mood", axis=1)
 
-data['prediction']= mood_prediction(X_data)
-new_data['prediction'] = mood_prediction(X_new_data)
+data['prediction'], predictions_proba = mood_prediction(X_data)
+new_data['prediction'], predictions_proba  = mood_prediction(X_new_data)
 
 #Type adjustment
 data['mood'] = data['mood'].astype('str')
@@ -95,6 +97,7 @@ column_mapping.pos_label = '1'
 # Model perfomance
 
 #label binary classification
+
 classification_report = Report(metrics=[
     ClassificationQualityMetric(),
     ClassificationClassBalance(),
@@ -105,9 +108,20 @@ classification_report = Report(metrics=[
     ClassificationQualityByFeatureTable(columns = numerical_features),
 ])
 
+
 classification_report.run(reference_data = reference_data, current_data= current_data, column_mapping=column_mapping)
 classification_report_path = reports_dir / 'classification_report.html'
 classification_report.save_html(classification_report_path)
+
+#test label binary classification
+
+test_classification_report = TestSuite(tests=[BinaryClassificationTestPreset(),
+                                        ])
+
+test_classification_report.run(reference_data = reference_data, current_data= current_data, column_mapping=column_mapping)
+test_classification_report_path = reports_dir / 'test_classification_report.html'
+test_classification_report.save_html(test_classification_report_path)
+
 
 # Target drift
 

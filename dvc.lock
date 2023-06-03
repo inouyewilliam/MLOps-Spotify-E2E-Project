@@ -54,18 +54,21 @@ stages:
       md5: 4d20b4bd5844292f71f36a1d66a52313
       size: 6665
     - path: scripts/model_monitoring.py
-      md5: fcdc9e4f9f7845c7da960318fd13d511
-      size: 4542
+      md5: 6a480e94b17680dc2bd4e218be6123d9
+      size: 5142
     outs:
     - path: reports/classification_report.html
-      md5: d0fc1636ca51878192fd128de4a27c48
+      md5: 9c6b4fbcfc449da5ec74c5dfde877e25
       size: 2744580
     - path: reports/data_drift.html
-      md5: 5f598ca6ba3edcc9a30234203689b138
-      size: 2901592
+      md5: bbf75007d77b2fbc1d537733ae5a43eb
+      size: 2901591
     - path: reports/data_quality.html
-      md5: 060f67d7ffb3d76d99a80c37678ad08d
+      md5: 81cd9902a405563da834401e44aa1a03
       size: 2874293
     - path: reports/target_drift.html
-      md5: 6110a9a1a03df062963eb878fc09a726
+      md5: be532c39cac8313d0b1a0d04fb6e7481
       size: 2749841
+    - path: reports/test_classification_report.html
+      md5: 39d827a3651953c05f82bfdde43239d2
+      size: 2762064
