@@ -1,5 +1,4 @@
 /.ipynb_checkpoints
 /mlruns
-temp.csv
 .env
 experiment.txt
