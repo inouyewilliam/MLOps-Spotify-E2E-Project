@@ -36,7 +36,6 @@ dtype = {
        'key':'int8',
        'loudness': float,
        'mode':'int8', 
-       'instrumentalness':'int8',
        'tempo':float, 
        'duration_ms':int,
        'time_signature':'int8',
@@ -60,7 +59,7 @@ new_data = pd.read_csv(csv, sep=",",dtype=dtype)
 target = 'mood'
 prediction = 'prediction'
 numerical_features = ['popularity', 'followers', 'danceability', 'energy', 'loudness', 'tempo','duration_ms']
-categorical_features = ['genres', 'sub-genres', 'explicit','instrumentalness','key','mode','time_signature']
+categorical_features = ['genres', 'sub-genres', 'explicit','key','mode','time_signature']
 
 reports_dir = Path('C:/Users/willi/Python/Spotify_Project/reports') #/ f'{today}'
 reports_dir.mkdir(exist_ok=True)

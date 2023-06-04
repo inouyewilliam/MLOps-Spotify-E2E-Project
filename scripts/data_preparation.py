@@ -16,21 +16,15 @@ def preprocess(df):
 
        # Clean Other columns
        df["mood"] = [1 if i >= 0.5 else 0 for i in df.valence]
-       df["liveness"] = [1 if i >= 0.8 else 0 for i in df.liveness]
        df["explicit"] = [1 if i == True else 0 for i in df.explicit]
-       df["speechiness"] = [1 if i > 0.66 else 0 for i in df.speechiness]
-       df["instrumentalness"] = [1 if i > 0.5 else 0 for i in df.instrumentalness]
-
        
        # Improve data types
        df['popularity'] = df['popularity'].astype('int8')
        df['time_signature'] = df['time_signature'].astype('int8')
        df['key']  = df['key'].astype('int8')
        df['mood']  = df['mood'].astype('int8')
-
        df['mode'] = df['mode'].astype('int8')
        df['explicit'] =  df['explicit'].astype('int8')         
-       df['instrumentalness'] = df['instrumentalness'].astype('int8')
       
        # Transform nan to zeros and 
        df["genres"].replace(np.nan, 0, inplace=True)
@@ -42,7 +36,7 @@ def preprocess(df):
        df['sub-genres'] = le.fit_transform(df['sub-genres'].astype(str))
        
        # Build train dataset
-       df = df.drop(columns = ['valence','artist', 'album', 'track_name','release_date','track_id','speechiness','liveness'], axis = 1)
+       df = df.drop(columns = ['valence','artist', 'album', 'track_name','release_date','track_id','speechiness','liveness','instrumentalness'], axis = 1)
        
        return df
 
