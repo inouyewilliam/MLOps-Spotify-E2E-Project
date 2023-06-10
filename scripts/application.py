@@ -99,18 +99,20 @@ if file is not None:
         
             predictions, predictions_proba = mood_prediction(temp_filename)
             
-            st.subheader("Mood Predictions")
+            col1, col2 = st.columns(2)
+            
+            col1.subheader("Mood Predictions")
             
             for index, mood in enumerate(predictions):        
                 if mood == 1:
-                    st.write(f"{index} 😊happy")
+                    col1.write(f"{index} 😊happy")
                 else:
-                    st.write(f"{index} 😒sad")
+                    col1.write(f"{index} 😒sad")
                     
-            st.subheader('Prediction Probabilities')
+            col2.subheader('Prediction Probabilities')
             formatted_probabilities = np.apply_along_axis(lambda x: ['{:.2f}%'.format(i * 100) for i in x], axis=1, arr=predictions_proba)
             df = pd.DataFrame(formatted_probabilities, columns=['0', '1'])
-            st.dataframe(df)
+            col2.dataframe(df)
 
 else:         
     # Make Predictions user input          

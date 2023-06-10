@@ -41,7 +41,7 @@ def mood_prediction(music):
     
     mlflow.set_tracking_uri("https://dagshub.com/inouyewilliam/Master-Thesis.mlflow")
     
-    logged_model = 'runs:/5154466b36f54418a25059dcb5a943be/model'
+    logged_model = 'runs:/5154466b36f54418a25059dcb5a943be/model' # Change the model URI, when find a best model
     
     loaded_model = mlflow.sklearn.load_model(logged_model)
     
