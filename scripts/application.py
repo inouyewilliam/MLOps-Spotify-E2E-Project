@@ -108,7 +108,9 @@ if file is not None:
                     st.write(f"{index} 😒sad")
                     
             st.subheader('Prediction Probabilities')
-            st.dataframe(predictions_proba)
+            formatted_probabilities = np.apply_along_axis(lambda x: ['{:.2f}%'.format(i * 100) for i in x], axis=1, arr=predictions_proba)
+            df = pd.DataFrame(formatted_probabilities, columns=['0', '1'])
+            st.dataframe(df)
 
 else:         
     # Make Predictions user input          
@@ -127,5 +129,7 @@ else:
                     st.write(f"{index} 😒sad")
                     
             st.subheader('Prediction Probability')
-            st.dataframe(predictions_proba)                   
+            formatted_probabilities2 = np.apply_along_axis(lambda x: ['{:.2f}%'.format(i * 100) for i in x], axis=1, arr=predictions_proba)
+            df2 = pd.DataFrame(formatted_probabilities2, columns=['0', '1'])
+            st.dataframe(df2)                   
             

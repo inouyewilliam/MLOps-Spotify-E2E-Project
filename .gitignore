@@ -3,3 +3,6 @@
 .env
 experiment.txt
 /Notebooks/Images
+/Notebooks/catboost_info
+/Notebooks/mlruns
+/Notebooks/logs.log

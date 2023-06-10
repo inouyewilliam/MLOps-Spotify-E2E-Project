@@ -6,7 +6,6 @@ from dotenv import find_dotenv, load_dotenv
 import pandas as pd
 import numpy as np
 from sklearn.pipeline import Pipeline
-#from sklearn.metrics import f1_score, confusion_matrix, accuracy_score, roc_auc_score, precision_score, recall_score,roc_auc_score, average_precision_score
 from sklearn.model_selection import cross_val_score, RandomizedSearchCV, train_test_split, KFold
 from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn.preprocessing import StandardScaler
@@ -130,6 +129,8 @@ if __name__ == "__main__":
         
         random_search.fit(X_train, y_train)
         
+       
+                
         # Infer the model signature
         signature = infer_signature(X, random_search.predict(X))
         
@@ -154,7 +155,8 @@ if __name__ == "__main__":
         mlflow.log_metric("precision", precision)
         mlflow.log_metric("recall", recall)
         mlflow.log_metric("f1 score", f1)
-
+        
+       
         # Register the model            
         mlflow.lightgbm.log_model(random_search, "model", signature = signature, registered_model_name="LgbmModel")
         
