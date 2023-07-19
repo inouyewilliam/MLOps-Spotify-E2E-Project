@@ -14,18 +14,18 @@ The results show the effectiveness of the pipeline in meeting MLOps requirements
 Overall, a comprehensive MLOps project is presented, combining ML industry best practices with an open source MLOps stack. I hope this project serves as a valuable resource for those looking to implement efficient and scalable ML solutions in real-world applications.
 
 ## MLOps definition 
-![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/5e019c6c-76b7-4266-ae2a-85e0506efa69)
+![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/72a82efb-145d-4004-aeaa-8cb133a79eef)
 
 ## MLOps stack
 ![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/bb6d0b08-a3f5-401f-8305-96bc12f6d33d)
-### *Summary of DevOps and MLOps principles*
+<center> ##### *Summary of DevOps and MLOps principles* <center>
 
 ## Methodologies 
 ![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/711f4ff0-ac7b-4912-9477-9d6adc686893)
-### *Google's Maturity Framework*
+<center> ##### *Google's Maturity Framework* <center>
 
 ![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/c4db6307-4445-4406-a458-a4c0d909e6bf)
-### *CRISP-ML(Q) Methology*
+<center> ##### *CRISP-ML(Q) Methology* <center>
 
 ## Final ML Application
 😎 **Deployed Streamlit app: https://music-mood-prediction.streamlit.app/**
