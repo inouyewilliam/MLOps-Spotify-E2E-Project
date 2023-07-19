@@ -14,18 +14,19 @@ The results show the effectiveness of the pipeline in meeting MLOps requirements
 Overall, a comprehensive MLOps project is presented, combining ML industry best practices with an open source MLOps stack. I hope this project serves as a valuable resource for those looking to implement efficient and scalable ML solutions in real-world applications.
 
 ## MLOps definition 
-![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/72a82efb-145d-4004-aeaa-8cb133a79eef)
+![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/7899bbfb-5cc1-43dc-b2cb-fdf0b6625e8b)
+<h5 align="center">_Summary of DevOps and MLOps principles_</h5>
 
-## MLOps stack
+## Methodologies followed
+![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/84a0b17b-d272-4375-b9f7-8c8935470c36)
+<h5 align="center">_Google's Maturity Framework_</h5>
+
+![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/91d0b5f1-6a1d-42dc-84d9-87aa932a257d)
+<h5 align="center">_CRISP-ML(Q) Methology_</h5>
+
+## Chosen MLOps stack 
 ![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/bb6d0b08-a3f5-401f-8305-96bc12f6d33d)
-<h5 align="center"> *Summary of DevOps and MLOps principles* </h5>
-
-## Methodologies 
-
-<center> ##### *Google's Maturity Framework* <center>
-
-
-<center> ##### *CRISP-ML(Q) Methology* <center>
+<h5 align="center">_MLOps stack in Google’s maturity model framework_</h5>
 
 ## Final ML Application
 😎 **Deployed Streamlit app: https://music-mood-prediction.streamlit.app/**
