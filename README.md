@@ -18,7 +18,7 @@ Overall, a comprehensive MLOps project is presented, combining ML industry best 
 <h5 align="center"><em>Summary of DevOps and MLOps principles</em></h5>
 
 ## Methodologies followed
-![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/3d101722-bbce-484a-b457-485309636335)
+![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/25ed3dc7-54c9-4eea-9ed5-948700e65901)
 <h5 align="center"><em>Google's Maturity Framework</em></h5>
 
 ![image](https://github.com/inouyewilliam/MLOps-Spotify-E2E-Project/assets/62669400/91d0b5f1-6a1d-42dc-84d9-87aa932a257d)
