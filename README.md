@@ -34,8 +34,8 @@ Overall, a comprehensive MLOps project is presented, combining ML industry best 
 
 
 ## API reference
-https://spotipy.readthedocs.io/en/2.22.0/
-https://developer.spotify.com/documentation/web-api
+<li> https://spotipy.readthedocs.io/en/2.22.0/
+https://developer.spotify.com/documentation/web-api </li>
 
 ## My Dagshub reference
 https://dagshub.com/inouyewilliam/MLOps-Spotify-E2E-Project
