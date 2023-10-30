@@ -1,6 +1,6 @@
 spotipy
 pandas
-#shap
+shap
 scipy
 scikit-learn
 numpy
