@@ -133,5 +133,5 @@ else:
             st.subheader('Prediction Probability')
             formatted_probabilities2 = np.apply_along_axis(lambda x: ['{:.2f}%'.format(i * 100) for i in x], axis=1, arr=predictions_proba)
             df2 = pd.DataFrame(formatted_probabilities2, columns=['0', '1'])
-            st.dataframe(df2)                   
+            st.dataframe(df2)                    
             
